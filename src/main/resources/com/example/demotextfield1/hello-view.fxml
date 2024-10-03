@@ -7,43 +7,44 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="500.0" prefWidth="750.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.example.demotextfield1.HelloController">
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="750.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demotextfield1.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
       <HBox prefHeight="42.0" prefWidth="460.0">
          <children>
-            <TextField prefWidth="250.0" HBox.hgrow="ALWAYS" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Enviar">
+            <TextField fx:id="texto1" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="botonEnviar" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Enviar">
                <HBox.margin>
                   <Insets left="20.0" right="100.0" />
                </HBox.margin>
             </Button>
          </children>
       </HBox>
-      <Label prefHeight="50.0" prefWidth="400.0" text="Label" />
+      <Label fx:id="label1" nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="400.0" text="Tecla Presionada: " />
       <HBox prefHeight="42.0" prefWidth="460.0">
          <children>
-            <TextField prefWidth="250.0" HBox.hgrow="ALWAYS" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Borrar">
+            <TextField fx:id="texto2" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="botonBorrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Borrar">
                <HBox.margin>
                   <Insets left="20.0" right="100.0" />
                </HBox.margin>
             </Button>
          </children>
       </HBox>
-      <Label prefHeight="50.0" prefWidth="400.0" text="Label" />
+      <Label fx:id="label2" prefHeight="50.0" prefWidth="400.0" text="Tecla Presionada: " />
       <HBox prefHeight="58.0" prefWidth="460.0">
          <children>
-            <TextField prefWidth="250.0" HBox.hgrow="ALWAYS" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Button">
+            <TextField fx:id="texto3" prefWidth="250.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="botonEdad" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Edad Random">
                <HBox.margin>
                   <Insets left="20.0" right="100.0" />
                </HBox.margin>
             </Button>
          </children>
       </HBox>
-      <Label prefHeight="30.0" prefWidth="400.0" text="Label" />
+      <Label fx:id="label3" prefHeight="50.0" prefWidth="400.0" text="Tecla Presionada: " />
+      <Label fx:id="label4" prefHeight="17.0" prefWidth="300.0" />
    </children>
 </VBox>
